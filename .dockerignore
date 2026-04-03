@@ -1,0 +1,6 @@
+venv/
+urban_venv/
+__pycache__/
+.pytest_cache/
+.github/
+.git/
