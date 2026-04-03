@@ -32,4 +32,4 @@ jobs:
       # Step D: Run the test we wrote earlier
       - name: Run Pytest
         run: |
-          pytest test_app.py
+          pytest tests/test_app.py
