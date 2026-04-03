@@ -1,0 +1,12 @@
+pyproject.toml
+requirements.txt
+./src/__init__.py
+./src/train copy.py
+./src/train.py
+./src/train_functn.py
+./src/utils.py
+urban_land_cover_end_to_end.egg-info/PKG-INFO
+urban_land_cover_end_to_end.egg-info/SOURCES.txt
+urban_land_cover_end_to_end.egg-info/dependency_links.txt
+urban_land_cover_end_to_end.egg-info/requires.txt
+urban_land_cover_end_to_end.egg-info/top_level.txt

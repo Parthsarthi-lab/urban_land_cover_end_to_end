@@ -1,0 +1,400 @@
+2026-04-03 18:35:44,621 - INFO - Loaded training config from config/random_forest_grid.yaml
+2026-04-03 18:35:44,632 - INFO - Loaded dataset from data/training.csv
+2026-04-03 18:35:44,650 - INFO - Loaded dataset from data/testing.csv
+2026-04-03 18:35:44,655 - INFO - Target distribution:
+2026-04-03 18:35:44,656 - INFO - class
+grass       0.172619
+building    0.148810
+concrete    0.136905
+tree        0.101190
+shadow      0.095238
+car         0.089286
+pool        0.089286
+asphalt     0.083333
+soil        0.083333
+Name: proportion, dtype: float64
+2026-04-03 18:35:44,657 - INFO - Data validation successful.
+2026-04-03 18:35:44,660 - INFO - Target distribution:
+2026-04-03 18:35:44,661 - INFO - class
+building    0.191321
+concrete    0.183432
+tree        0.175542
+grass       0.163708
+shadow      0.088757
+asphalt     0.088757
+car         0.041420
+soil        0.039448
+pool        0.027613
+Name: proportion, dtype: float64
+2026-04-03 18:35:44,662 - INFO - Data validation successful.
+2026-04-03 18:35:44,663 - INFO - Feature group spectral resolved to 56 columns.
+2026-04-03 18:35:44,663 - INFO - Feature selection mode: spectral_only
+2026-04-03 18:35:44,663 - INFO - Selected feature group: spectral
+2026-04-03 18:35:44,663 - INFO - Selected columns: ['Bright', 'Mean_NIR', 'Mean_R', 'Mean_G', 'SD_NIR', 'SD_R', 'SD_G', 'NDVI', 'Bright_40', 'Mean_NIR_40', 'Mean_R_40', 'Mean_G_40', 'SD_NIR_40', 'SD_R_40', 'SD_G_40', 'NDVI_40', 'Bright_60', 'Mean_NIR_60', 'Mean_R_60', 'Mean_G_60', 'SD_NIR_60', 'SD_R_60', 'SD_G_60', 'NDVI_60', 'Bright_80', 'Mean_NIR_80', 'Mean_R_80', 'Mean_G_80', 'SD_NIR_80', 'SD_R_80', 'SD_G_80', 'NDVI_80', 'Bright_100', 'Mean_NIR_100', 'Mean_R_100', 'Mean_G_100', 'SD_NIR_100', 'SD_R_100', 'SD_G_100', 'NDVI_100', 'Bright_120', 'Mean_NIR_120', 'Mean_R_120', 'Mean_G_120', 'SD_NIR_120', 'SD_R_120', 'SD_G_120', 'NDVI_120', 'Bright_140', 'Mean_NIR_140', 'Mean_R_140', 'Mean_G_140', 'SD_NIR_140', 'SD_R_140', 'SD_G_140', 'NDVI_140']
+2026-04-03 18:35:44,916 - INFO - Final model name: RandomForestClassifier
+2026-04-03 18:35:44,916 - INFO - Final model params: {'n_estimators': 100, 'n_jobs': 1, 'max_depth': 5, 'max_features': 9, 'min_samples_split': 4, 'random_state': 42}
+2026-04-03 18:35:44,916 - INFO - Training evaluation:
+2026-04-03 18:35:44,916 - INFO - Train accuracy: 0.958333
+2026-04-03 18:35:44,916 - INFO - Train weighted F1: 0.958146
+2026-04-03 18:35:44,916 - INFO - 
+              precision    recall  f1-score   support
+
+     asphalt       1.00      1.00      1.00        14
+    building       0.96      0.96      0.96        25
+         car       1.00      1.00      1.00        15
+    concrete       0.88      0.91      0.89        23
+       grass       0.94      1.00      0.97        29
+        pool       1.00      1.00      1.00        15
+      shadow       1.00      1.00      1.00        16
+        soil       0.92      0.86      0.89        14
+        tree       1.00      0.88      0.94        17
+
+    accuracy                           0.96       168
+   macro avg       0.97      0.96      0.96       168
+weighted avg       0.96      0.96      0.96       168
+
+2026-04-03 18:35:44,916 - INFO - Testing evaluation:
+2026-04-03 18:35:44,916 - INFO - Test accuracy: 0.779093
+2026-04-03 18:35:44,916 - INFO - Test weighted F1: 0.779053
+2026-04-03 18:35:44,916 - INFO - 
+              precision    recall  f1-score   support
+
+     asphalt       0.88      0.78      0.82        45
+    building       0.85      0.62      0.71        97
+         car       0.56      0.90      0.69        21
+    concrete       0.74      0.82      0.78        93
+       grass       0.76      0.88      0.82        83
+        pool       0.93      0.93      0.93        14
+      shadow       0.80      0.87      0.83        45
+        soil       0.59      0.85      0.69        20
+        tree       0.89      0.71      0.79        89
+
+    accuracy                           0.78       507
+   macro avg       0.78      0.82      0.78       507
+weighted avg       0.80      0.78      0.78       507
+
+2026-04-03 18:35:44,953 - INFO - Saved trained model to artifacts/rf_model.joblib
+2026-04-03 18:40:37,179 - INFO - Loaded dataset from data/training.csv
+2026-04-03 18:40:37,179 - INFO - Loaded dataset from data/training.csv
+2026-04-03 18:40:37,188 - INFO - Feature selection mode: spectral_only
+2026-04-03 18:40:37,188 - INFO - Selected feature group: spectral
+2026-04-03 18:40:37,188 - INFO - Selected feature group: spectral
+_NIR', 'Mean_R', 'Mean_G', 'SD_NIR', 'SD_R', 'SD_G', 'NDVI', 'Bright_40', 'Mean_NIR_40', 'Mean_R_40', 'Mean_G_40', 'SD_NIR_40', 'SD_R_40', 'SD_G_40', 'NDVI_40', 'Bright_60', 'Mean_NIR_60', 'Mean_R_60', 'Mean_G_60', 'SD_NIR_60', 'SD_R_60', 'SD_G_60', 'NDVI_60', 'Bright_80', 'Mean_NIR_80', 'Mean_R_80', 'Mean_G_80', 'SD_NIR_80', 'SD_R_80', 'SD_G_80', 'NDVI_80', 'Bright_100', 'Mean_NIR_100', 'Mean_R_100', 'Mean_G_100', 'SD_NIR_100', 'SD_R_100', 'SD_G_100', 'NDVI_100', 'Bright_120', 'Mean_NIR_120', 'Mean_R_120', 'Mean_G_120', 'SD_NIR_120', 'SD_R_120', 'SD_G_120', 'NDVI_120', 'Bright_140', 'Mean_NIR_140', 'Mean_R_140', 'Mean_G_140', 'SD_NIR_140', 'SD_R_140', 'SD_G_140', 'NDVI_140']
+2026-04-03 18:40:37,188 - INFO - Selected columns: ['Bright', 'Mean_NIR', 'Mean_R', 'Mean_G', 'SD_NIR', 'SD_R', 'SD_G', 'NDVI', 'Bright_40', 'Mean_NIR_40', 'Mean_R_40', 'Mean_G_40', 'SD_NIR_40', 'SD_R_40', 'SD_G_40', 'NDVI_40', 'Bright_60', 'Mean_NIR_60', 'Mean_R_60', 'Mean_G_60', 'SD_NIR_60', 'SD_R_60', 'SD_G_60', 'NDVI_60', 'Bright_80', 'Mean_NIR_80', 'Mean_R_80', 'Mean_G_80', 'SD_NIR_80', 'SD_R_80', 'SD_G_80', 'NDVI_80', 'Bright_100', 'Mean_NIR_100', 'Mean_R_100', 'Mean_G_100', 'SD_NIR_100', 'SD_R_100', 'SD_G_100', 'NDVI_100', 'Bright_120', 'Mean_NIR_120', 'Mean_R_120', 'Mean_G_120', 'SD_NIR_120', 'SD_R_120', 'SD_G_120', 'NDVI_120', 'Bright_140', 'Mean_NIR_140', 'Mean_R_140', 'Mean_G_140', 'SD_NIR_140', 'SD_R_140', 'SD_G_140', 'NDVI_140']
+2026-04-03 18:40:37,196 - INFO - Starting model selection experiment: depth_only
+2026-04-03 18:40:37,196 - INFO - Model name: RandomForestClassifier
+2026-04-03 18:40:37,197 - INFO - Selected features used for tuning: ['Bright', 'Mean_NIR', 'Mean_R', 'Mean_G', 'SD_NIR', 'SD_R', 'SD_G', 'NDVI', 'Bright_40', 'Mean_NIR_40', 'Mean_R_40', 'Mean_G_40', 'SD_NIR_40', 'SD_R_40', 'SD_G_40', 'NDVI_40', 'Bright_60', 'Mean_NIR_60', 'Mean_R_60', 'Mean_G_60', 'SD_NIR_60', 'SD_R_60', 'SD_G_60', 'NDVI_60', 'Bright_80', 'Mean_NIR_80', 'Mean_R_80', 'Mean_G_80', 'SD_NIR_80', 'SD_R_80', 'SD_G_80', 'NDVI_80', 'Bright_100', 'Mean_NIR_100', 'Mean_R_100', 'Mean_G_100', 'SD_NIR_100', 'SD_R_100', 'SD_G_100', 'NDVI_100', 'Bright_120', 'Mean_NIR_120', 'Mean_R_120', 'Mean_G_120', 'SD_NIR_120', 'SD_R_120', 'SD_G_120', 'NDVI_120', 'Bright_140', 'Mean_NIR_140', 'Mean_R_140', 'Mean_G_140', 'SD_NIR_140', 'SD_R_140', 'SD_G_140', 'NDVI_140']
+2026-04-03 18:40:37,197 - INFO - Fixed model params: {'n_estimators': 100, 'n_jobs': 1, 'max_features': 9, 'min_samples_split': 4, 'random_state': 42}
+2026-04-03 18:40:37,197 - INFO - Param grid: {'max_depth': [2, 3, 4, 5, 6]}
+2026-04-03 18:40:51,376 - INFO - Grid search results:
+param_max_depth  split0_test_score  split1_test_score  split2_test_score  split3_test_score  split4_test_score  mean_test_score  std_test_score  rank_test_score
+              5           0.815223           0.758874           0.787516           0.908442           0.692208         0.792453        0.070955                1
+              6           0.822086           0.757143           0.823996           0.851141           0.640914         0.779056        0.075672                2
+              4           0.854902           0.756704           0.793838           0.846183           0.640914         0.778508        0.077535                3
+              3           0.733147           0.670970           0.741127           0.858411           0.621960         0.725123        0.079576                4
+              2           0.646178           0.664367           0.570610           0.826761           0.607753         0.663134        0.087967                5
+2026-04-03 18:40:51,376 - INFO - Best score: 0.792453
+2026-04-03 18:40:51,376 - INFO - Best params: {'max_depth': 5}
+2026-04-03 19:47:34,958 - INFO - Loaded dataset from data/training.csv
+2026-04-03 19:47:34,987 - INFO - Loaded dataset from data/testing.csv
+2026-04-03 19:47:34,999 - INFO - Target distribution:
+2026-04-03 19:47:35,001 - INFO - class
+grass       0.172619
+building    0.148810
+concrete    0.136905
+tree        0.101190
+shadow      0.095238
+car         0.089286
+pool        0.089286
+asphalt     0.083333
+soil        0.083333
+Name: proportion, dtype: float64
+2026-04-03 19:47:35,001 - INFO - Data validation successful.
+2026-04-03 19:47:35,009 - INFO - Target distribution:
+2026-04-03 19:47:35,009 - INFO - class
+building    0.191321
+concrete    0.183432
+tree        0.175542
+grass       0.163708
+shadow      0.088757
+asphalt     0.088757
+car         0.041420
+soil        0.039448
+pool        0.027613
+Name: proportion, dtype: float64
+2026-04-03 19:47:35,009 - INFO - Data validation successful.
+2026-04-03 19:47:35,012 - INFO - Feature selection mode: spectral_only
+2026-04-03 19:47:35,012 - INFO - Selected feature group: spectral
+2026-04-03 19:47:35,012 - INFO - Selected columns: ['Bright', 'Mean_NIR', 'Mean_R', 'Mean_G', 'SD_NIR', 'SD_R', 'SD_G', 'NDVI', 'Bright_40', 'Mean_NIR_40', 'Mean_R_40', 'Mean_G_40', 'SD_NIR_40', 'SD_R_40', 'SD_G_40', 'NDVI_40', 'Bright_60', 'Mean_NIR_60', 'Mean_R_60', 'Mean_G_60', 'SD_NIR_60', 'SD_R_60', 'SD_G_60', 'NDVI_60', 'Bright_80', 'Mean_NIR_80', 'Mean_R_80', 'Mean_G_80', 'SD_NIR_80', 'SD_R_80', 'SD_G_80', 'NDVI_80', 'Bright_100', 'Mean_NIR_100', 'Mean_R_100', 'Mean_G_100', 'SD_NIR_100', 'SD_R_100', 'SD_G_100', 'NDVI_100', 'Bright_120', 'Mean_NIR_120', 'Mean_R_120', 'Mean_G_120', 'SD_NIR_120', 'SD_R_120', 'SD_G_120', 'NDVI_120', 'Bright_140', 'Mean_NIR_140', 'Mean_R_140', 'Mean_G_140', 'SD_NIR_140', 'SD_R_140', 'SD_G_140', 'NDVI_140']
+2026-04-03 19:47:35,361 - INFO - Final model name: RandomForestClassifier
+2026-04-03 19:47:35,361 - INFO - Final model params: {'n_estimators': 100, 'n_jobs': 1, 'max_depth': 5, 'max_features': 9, 'min_samples_split': 4, 'random_state': 42}
+2026-04-03 19:47:35,361 - INFO - Training evaluation:
+2026-04-03 19:47:35,361 - INFO - Train accuracy: 0.958333
+2026-04-03 19:47:35,361 - INFO - Train weighted F1: 0.958146
+2026-04-03 19:47:35,361 - INFO - 
+              precision    recall  f1-score   support
+
+     asphalt       1.00      1.00      1.00        14
+    building       0.96      0.96      0.96        25
+         car       1.00      1.00      1.00        15
+    concrete       0.88      0.91      0.89        23
+       grass       0.94      1.00      0.97        29
+        pool       1.00      1.00      1.00        15
+      shadow       1.00      1.00      1.00        16
+        soil       0.92      0.86      0.89        14
+        tree       1.00      0.88      0.94        17
+
+    accuracy                           0.96       168
+   macro avg       0.97      0.96      0.96       168
+weighted avg       0.96      0.96      0.96       168
+
+2026-04-03 19:47:35,361 - INFO - Testing evaluation:
+2026-04-03 19:47:35,361 - INFO - Test accuracy: 0.779093
+2026-04-03 19:47:35,361 - INFO - Test weighted F1: 0.779053
+2026-04-03 19:47:35,361 - INFO - 
+              precision    recall  f1-score   support
+
+     asphalt       0.88      0.78      0.82        45
+    building       0.85      0.62      0.71        97
+         car       0.56      0.90      0.69        21
+    concrete       0.74      0.82      0.78        93
+       grass       0.76      0.88      0.82        83
+        pool       0.93      0.93      0.93        14
+      shadow       0.80      0.87      0.83        45
+        soil       0.59      0.85      0.69        20
+        tree       0.89      0.71      0.79        89
+
+    accuracy                           0.78       507
+   macro avg       0.78      0.82      0.78       507
+weighted avg       0.80      0.78      0.78       507
+
+2026-04-03 19:47:35,408 - INFO - Saved trained model to artifacts/rf_model.joblib
+2026-04-03 19:56:54,184 - INFO - Loaded dataset from data/training.csv
+2026-04-03 19:57:17,547 - INFO - Loaded dataset from data/training.csv
+2026-04-03 19:57:17,548 - INFO - Feature selection strategy: group
+2026-04-03 19:57:17,548 - INFO - Feature selection params: {'group': 'spectral'}
+2026-04-03 19:57:17,548 - INFO - Selected columns: ['Bright', 'Mean_NIR', 'Mean_R', 'Mean_G', 'SD_NIR', 'SD_R', 'SD_G', 'NDVI', 'Bright_40', 'Mean_NIR_40', 'Mean_R_40', 'Mean_G_40', 'SD_NIR_40', 'SD_R_40', 'SD_G_40', 'NDVI_40', 'Bright_60', 'Mean_NIR_60', 'Mean_R_60', 'Mean_G_60', 'SD_NIR_60', 'SD_R_60', 'SD_G_60', 'NDVI_60', 'Bright_80', 'Mean_NIR_80', 'Mean_R_80', 'Mean_G_80', 'SD_NIR_80', 'SD_R_80', 'SD_G_80', 'NDVI_80', 'Bright_100', 'Mean_NIR_100', 'Mean_R_100', 'Mean_G_100', 'SD_NIR_100', 'SD_R_100', 'SD_G_100', 'NDVI_100', 'Bright_120', 'Mean_NIR_120', 'Mean_R_120', 'Mean_G_120', 'SD_NIR_120', 'SD_R_120', 'SD_G_120', 'NDVI_120', 'Bright_140', 'Mean_NIR_140', 'Mean_R_140', 'Mean_G_140', 'SD_NIR_140', 'SD_R_140', 'SD_G_140', 'NDVI_140']
+2026-04-03 19:57:17,559 - INFO - Loaded dataset from data/training.csv
+2026-04-03 19:57:17,569 - INFO - Loaded dataset from data/testing.csv
+2026-04-03 19:57:17,571 - INFO - Target distribution:
+2026-04-03 19:57:17,571 - INFO - class
+grass       0.172619
+building    0.148810
+concrete    0.136905
+tree        0.101190
+shadow      0.095238
+car         0.089286
+pool        0.089286
+asphalt     0.083333
+soil        0.083333
+Name: proportion, dtype: float64
+2026-04-03 19:57:17,571 - INFO - Data validation successful.
+2026-04-03 19:57:17,571 - INFO - Target distribution:
+2026-04-03 19:57:17,571 - INFO - class
+building    0.191321
+concrete    0.183432
+tree        0.175542
+grass       0.163708
+shadow      0.088757
+asphalt     0.088757
+car         0.041420
+soil        0.039448
+pool        0.027613
+Name: proportion, dtype: float64
+2026-04-03 19:57:17,576 - INFO - Data validation successful.
+2026-04-03 19:57:17,577 - INFO - Feature selection strategy: group
+2026-04-03 19:57:17,577 - INFO - Feature selection params: {'group': 'spectral'}
+2026-04-03 19:57:17,577 - INFO - Selected columns: ['Bright', 'Mean_NIR', 'Mean_R', 'Mean_G', 'SD_NIR', 'SD_R', 'SD_G', 'NDVI', 'Bright_40', 'Mean_NIR_40', 'Mean_R_40', 'Mean_G_40', 'SD_NIR_40', 'SD_R_40', 'SD_G_40', 'NDVI_40', 'Bright_60', 'Mean_NIR_60', 'Mean_R_60', 'Mean_G_60', 'SD_NIR_60', 'SD_R_60', 'SD_G_60', 'NDVI_60', 'Bright_80', 'Mean_NIR_80', 'Mean_R_80', 'Mean_G_80', 'SD_NIR_80', 'SD_R_80', 'SD_G_80', 'NDVI_80', 'Bright_100', 'Mean_NIR_100', 'Mean_R_100', 'Mean_G_100', 'SD_NIR_100', 'SD_R_100', 'SD_G_100', 'NDVI_100', 'Bright_120', 'Mean_NIR_120', 'Mean_R_120', 'Mean_G_120', 'SD_NIR_120', 'SD_R_120', 'SD_G_120', 'NDVI_120', 'Bright_140', 'Mean_NIR_140', 'Mean_R_140', 'Mean_G_140', 'SD_NIR_140', 'SD_R_140', 'SD_G_140', 'NDVI_140']
+2026-04-03 19:57:17,799 - INFO - Final model name: RandomForestClassifier
+2026-04-03 19:57:17,799 - INFO - Final model params: {'n_estimators': 100, 'n_jobs': 1, 'max_depth': 5, 'max_features': 9, 'min_samples_split': 4, 'random_state': 42}
+2026-04-03 19:57:17,799 - INFO - Training evaluation:
+2026-04-03 19:57:17,799 - INFO - Train accuracy: 0.958333
+2026-04-03 19:57:17,799 - INFO - Train weighted F1: 0.958146
+2026-04-03 19:57:17,799 - INFO - 
+              precision    recall  f1-score   support
+
+     asphalt       1.00      1.00      1.00        14
+    building       0.96      0.96      0.96        25
+         car       1.00      1.00      1.00        15
+    concrete       0.88      0.91      0.89        23
+       grass       0.94      1.00      0.97        29
+        pool       1.00      1.00      1.00        15
+      shadow       1.00      1.00      1.00        16
+        soil       0.92      0.86      0.89        14
+        tree       1.00      0.88      0.94        17
+
+    accuracy                           0.96       168
+   macro avg       0.97      0.96      0.96       168
+weighted avg       0.96      0.96      0.96       168
+
+2026-04-03 19:57:17,799 - INFO - Testing evaluation:
+2026-04-03 19:57:17,799 - INFO - Test accuracy: 0.779093
+2026-04-03 19:57:17,799 - INFO - Test weighted F1: 0.779053
+2026-04-03 19:57:17,799 - INFO - 
+              precision    recall  f1-score   support
+
+     asphalt       0.88      0.78      0.82        45
+    building       0.85      0.62      0.71        97
+         car       0.56      0.90      0.69        21
+    concrete       0.74      0.82      0.78        93
+       grass       0.76      0.88      0.82        83
+        pool       0.93      0.93      0.93        14
+      shadow       0.80      0.87      0.83        45
+        soil       0.59      0.85      0.69        20
+        tree       0.89      0.71      0.79        89
+
+    accuracy                           0.78       507
+   macro avg       0.78      0.82      0.78       507
+weighted avg       0.80      0.78      0.78       507
+
+2026-04-03 19:57:17,829 - INFO - Saved trained model to artifacts/rf_model.joblib
+2026-04-03 21:45:45,186 - INFO - Loaded dataset from data/training.csv
+2026-04-03 21:45:45,206 - INFO - Loaded dataset from data/testing.csv
+2026-04-03 21:45:45,208 - INFO - Data validation successful.
+2026-04-03 21:45:45,208 - INFO - Data validation successful.
+2026-04-03 21:45:45,215 - INFO - Selected spectral columns: ['Bright', 'Mean_NIR', 'Mean_R', 'Mean_G', 'SD_NIR', 'SD_R', 'SD_G', 'NDVI', 'Bright_40', 'Mean_NIR_40', 'Mean_R_40', 'Mean_G_40', 'SD_NIR_40', 'SD_R_40', 'SD_G_40', 'NDVI_40', 'Bright_60', 'Mean_NIR_60', 'Mean_R_60', 'Mean_G_60', 'SD_NIR_60', 'SD_R_60', 'SD_G_60', 'NDVI_60', 'Bright_80', 'Mean_NIR_80', 'Mean_R_80', 'Mean_G_80', 'SD_NIR_80', 'SD_R_80', 'SD_G_80', 'NDVI_80', 'Bright_100', 'Mean_NIR_100', 'Mean_R_100', 'Mean_G_100', 'SD_NIR_100', 'SD_R_100', 'SD_G_100', 'NDVI_100', 'Bright_120', 'Mean_NIR_120', 'Mean_R_120', 'Mean_G_120', 'SD_NIR_120', 'SD_R_120', 'SD_G_120', 'NDVI_120', 'Bright_140', 'Mean_NIR_140', 'Mean_R_140', 'Mean_G_140', 'SD_NIR_140', 'SD_R_140', 'SD_G_140', 'NDVI_140']
+2026-04-03 21:45:46,852 - INFO - Model selection used one hyperparameter combination: {'n_estimators': 100, 'max_depth': 5, 'max_features': 9, 'min_samples_split': 4, 'n_jobs': 1}
+2026-04-03 21:45:46,852 - INFO - Cross-validation scores: [0.8152230122818359, 0.7588744588744588, 0.7875159154570919, 0.9084415584415583, 0.6922077922077922]
+2026-04-03 21:45:46,852 - INFO - Mean cross-validation score: 0.792453
+2026-04-03 21:45:47,162 - INFO - Final model params: {'n_estimators': 100, 'max_depth': 5, 'max_features': 9, 'min_samples_split': 4, 'n_jobs': 1}
+2026-04-03 21:45:47,162 - INFO - Training evaluation:
+2026-04-03 21:45:47,162 - INFO - Train accuracy: 0.958333
+2026-04-03 21:45:47,162 - INFO - Train weighted F1: 0.958146
+2026-04-03 21:45:47,162 - INFO - 
+              precision    recall  f1-score   support
+
+     asphalt       1.00      1.00      1.00        14
+    building       0.96      0.96      0.96        25
+         car       1.00      1.00      1.00        15
+    concrete       0.88      0.91      0.89        23
+       grass       0.94      1.00      0.97        29
+        pool       1.00      1.00      1.00        15
+      shadow       1.00      1.00      1.00        16
+        soil       0.92      0.86      0.89        14
+        tree       1.00      0.88      0.94        17
+
+    accuracy                           0.96       168
+   macro avg       0.97      0.96      0.96       168
+weighted avg       0.96      0.96      0.96       168
+
+2026-04-03 21:45:47,162 - INFO - Testing evaluation:
+2026-04-03 21:45:47,162 - INFO - Test accuracy: 0.779093
+2026-04-03 21:45:47,162 - INFO - Test weighted F1: 0.779053
+2026-04-03 21:45:47,162 - INFO - 
+              precision    recall  f1-score   support
+
+     asphalt       0.88      0.78      0.82        45
+    building       0.85      0.62      0.71        97
+         car       0.56      0.90      0.69        21
+    concrete       0.74      0.82      0.78        93
+       grass       0.76      0.88      0.82        83
+        pool       0.93      0.93      0.93        14
+      shadow       0.80      0.87      0.83        45
+        soil       0.59      0.85      0.69        20
+        tree       0.89      0.71      0.79        89
+
+    accuracy                           0.78       507
+   macro avg       0.78      0.82      0.78       507
+weighted avg       0.80      0.78      0.78       507
+
+2026-04-03 21:45:47,206 - INFO - Saved trained model to artifacts/rf_model.joblib
+2026-04-03 21:48:29,056 - INFO - Loaded dataset from data/training.csv
+2026-04-03 21:48:29,075 - INFO - Loaded dataset from data/testing.csv
+2026-04-03 21:48:29,079 - INFO - Data validation successful.
+2026-04-03 21:48:29,080 - INFO - Data validation successful.
+2026-04-03 21:48:29,082 - INFO - Selected spectral columns: ['Bright', 'Mean_NIR', 'Mean_R', 'Mean_G', 'SD_NIR', 'SD_R', 'SD_G', 'NDVI', 'Bright_40', 'Mean_NIR_40', 'Mean_R_40', 'Mean_G_40', 'SD_NIR_40', 'SD_R_40', 'SD_G_40', 'NDVI_40', 'Bright_60', 'Mean_NIR_60', 'Mean_R_60', 'Mean_G_60', 'SD_NIR_60', 'SD_R_60', 'SD_G_60', 'NDVI_60', 'Bright_80', 'Mean_NIR_80', 'Mean_R_80', 'Mean_G_80', 'SD_NIR_80', 'SD_R_80', 'SD_G_80', 'NDVI_80', 'Bright_100', 'Mean_NIR_100', 'Mean_R_100', 'Mean_G_100', 'SD_NIR_100', 'SD_R_100', 'SD_G_100', 'NDVI_100', 'Bright_120', 'Mean_NIR_120', 'Mean_R_120', 'Mean_G_120', 'SD_NIR_120', 'SD_R_120', 'SD_G_120', 'NDVI_120', 'Bright_140', 'Mean_NIR_140', 'Mean_R_140', 'Mean_G_140', 'SD_NIR_140', 'SD_R_140', 'SD_G_140', 'NDVI_140']
+2026-04-03 21:48:30,273 - INFO - Model selection used one hyperparameter combination: {'n_estimators': 100, 'max_depth': 5, 'max_features': 9, 'min_samples_split': 4, 'n_jobs': 1}
+2026-04-03 21:48:30,273 - INFO - Cross-validation scores: [0.8152230122818359, 0.7588744588744588, 0.7875159154570919, 0.9084415584415583, 0.6922077922077922]
+2026-04-03 21:48:30,273 - INFO - Mean cross-validation score: 0.792453
+2026-04-03 21:48:30,505 - INFO - Final model params: {'n_estimators': 100, 'max_depth': 5, 'max_features': 9, 'min_samples_split': 4, 'n_jobs': 1}
+2026-04-03 21:48:30,505 - INFO - Training evaluation:
+2026-04-03 21:48:30,505 - INFO - Train accuracy: 0.958333
+2026-04-03 21:48:30,505 - INFO - Train weighted F1: 0.958146
+2026-04-03 21:48:30,505 - INFO - 
+              precision    recall  f1-score   support
+
+     asphalt       1.00      1.00      1.00        14
+    building       0.96      0.96      0.96        25
+         car       1.00      1.00      1.00        15
+    concrete       0.88      0.91      0.89        23
+       grass       0.94      1.00      0.97        29
+        pool       1.00      1.00      1.00        15
+      shadow       1.00      1.00      1.00        16
+        soil       0.92      0.86      0.89        14
+        tree       1.00      0.88      0.94        17
+
+    accuracy                           0.96       168
+   macro avg       0.97      0.96      0.96       168
+weighted avg       0.96      0.96      0.96       168
+
+2026-04-03 21:48:30,505 - INFO - Testing evaluation:
+2026-04-03 21:48:30,505 - INFO - Test accuracy: 0.779093
+2026-04-03 21:48:30,505 - INFO - Test weighted F1: 0.779053
+2026-04-03 21:48:30,505 - INFO - 
+              precision    recall  f1-score   support
+
+     asphalt       0.88      0.78      0.82        45
+    building       0.85      0.62      0.71        97
+         car       0.56      0.90      0.69        21
+    concrete       0.74      0.82      0.78        93
+       grass       0.76      0.88      0.82        83
+        pool       0.93      0.93      0.93        14
+      shadow       0.80      0.87      0.83        45
+        soil       0.59      0.85      0.69        20
+        tree       0.89      0.71      0.79        89
+
+    accuracy                           0.78       507
+   macro avg       0.78      0.82      0.78       507
+weighted avg       0.80      0.78      0.78       507
+
+2026-04-03 21:48:30,540 - INFO - Saved trained model to artifacts/rf_model.joblib
+2026-04-03 21:48:51,211 - INFO - Loaded dataset from data/training.csv
+2026-04-03 21:48:51,226 - INFO - Loaded dataset from data/testing.csv
+2026-04-03 21:48:51,229 - INFO - Data validation successful.
+2026-04-03 21:48:51,230 - INFO - Data validation successful.
+2026-04-03 21:48:51,231 - INFO - Selected spectral columns: ['Bright', 'Mean_NIR', 'Mean_R', 'Mean_G', 'SD_NIR', 'SD_R', 'SD_G', 'NDVI', 'Bright_40', 'Mean_NIR_40', 'Mean_R_40', 'Mean_G_40', 'SD_NIR_40', 'SD_R_40', 'SD_G_40', 'NDVI_40', 'Bright_60', 'Mean_NIR_60', 'Mean_R_60', 'Mean_G_60', 'SD_NIR_60', 'SD_R_60', 'SD_G_60', 'NDVI_60', 'Bright_80', 'Mean_NIR_80', 'Mean_R_80', 'Mean_G_80', 'SD_NIR_80', 'SD_R_80', 'SD_G_80', 'NDVI_80', 'Bright_100', 'Mean_NIR_100', 'Mean_R_100', 'Mean_G_100', 'SD_NIR_100', 'SD_R_100', 'SD_G_100', 'NDVI_100', 'Bright_120', 'Mean_NIR_120', 'Mean_R_120', 'Mean_G_120', 'SD_NIR_120', 'SD_R_120', 'SD_G_120', 'NDVI_120', 'Bright_140', 'Mean_NIR_140', 'Mean_R_140', 'Mean_G_140', 'SD_NIR_140', 'SD_R_140', 'SD_G_140', 'NDVI_140']
+2026-04-03 21:48:52,511 - INFO - Model selection used one hyperparameter combination: {'n_estimators': 100, 'max_depth': 5, 'max_features': 9, 'min_samples_split': 4, 'n_jobs': 1}
+2026-04-03 21:48:52,511 - INFO - Cross-validation scores: [0.8152230122818359, 0.7588744588744588, 0.7875159154570919, 0.9084415584415583, 0.6922077922077922]
+2026-04-03 21:48:52,512 - INFO - Mean cross-validation score: 0.792453
+2026-04-03 21:48:52,761 - INFO - Final model params: {'n_estimators': 100, 'max_depth': 5, 'max_features': 9, 'min_samples_split': 4, 'n_jobs': 1}
+2026-04-03 21:48:52,761 - INFO - Training evaluation:
+2026-04-03 21:48:52,761 - INFO - Train accuracy: 0.958333
+2026-04-03 21:48:52,761 - INFO - Train weighted F1: 0.958146
+2026-04-03 21:48:52,761 - INFO - 
+              precision    recall  f1-score   support
+
+     asphalt       1.00      1.00      1.00        14
+    building       0.96      0.96      0.96        25
+         car       1.00      1.00      1.00        15
+    concrete       0.88      0.91      0.89        23
+       grass       0.94      1.00      0.97        29
+        pool       1.00      1.00      1.00        15
+      shadow       1.00      1.00      1.00        16
+        soil       0.92      0.86      0.89        14
+        tree       1.00      0.88      0.94        17
+
+    accuracy                           0.96       168
+   macro avg       0.97      0.96      0.96       168
+weighted avg       0.96      0.96      0.96       168
+
+2026-04-03 21:48:52,761 - INFO - Testing evaluation:
+2026-04-03 21:48:52,761 - INFO - Test accuracy: 0.779093
+2026-04-03 21:48:52,761 - INFO - Test weighted F1: 0.779053
+2026-04-03 21:48:52,762 - INFO - 
+              precision    recall  f1-score   support
+
+     asphalt       0.88      0.78      0.82        45
+    building       0.85      0.62      0.71        97
+         car       0.56      0.90      0.69        21
+    concrete       0.74      0.82      0.78        93
+       grass       0.76      0.88      0.82        83
+        pool       0.93      0.93      0.93        14
+      shadow       0.80      0.87      0.83        45
+        soil       0.59      0.85      0.69        20
+        tree       0.89      0.71      0.79        89
+
+    accuracy                           0.78       507
+   macro avg       0.78      0.82      0.78       507
+weighted avg       0.80      0.78      0.78       507
+
+2026-04-03 21:48:52,797 - INFO - Saved trained model to artifacts/rf_model.joblib

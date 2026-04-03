@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: urban-land-cover-end-to-end
+Version: 0.1.0
+Summary: Urban land cover training and serving pipeline.
+Requires-Python: <3.14,>=3.13
+Description-Content-Type: text/plain
+Requires-Dist: fastapi==0.135.1
+Requires-Dist: joblib==1.5.3
+Requires-Dist: numpy==2.3.3
+Requires-Dist: pandas==3.0.2
+Requires-Dist: PyYAML==6.0.3
+Requires-Dist: scikit-learn==1.8.0
+Requires-Dist: uvicorn==0.42.0
+
+Urban land cover training and serving pipeline.
