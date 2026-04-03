@@ -2,7 +2,6 @@ venv/
 urban_venv/
 __pycache__/
 .pytest_cache/
-data/
 models/
 src copy/
 src copy 2/
